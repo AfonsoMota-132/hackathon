@@ -5,7 +5,7 @@ import numpy as np
 from multiprocessing import Pool
 
 # Load the SBERT model
-model = SentenceTransformer('sentence-transformers/paraphrase-MiniLM-L6-v2')
+model = SentenceTransformer('sentence-transformers/paraphrase-MiniLM-L6-v2', device='cuda')
 
 # Read data using pandas
 movies_df = pd.read_csv('movies_metadata.csv')
